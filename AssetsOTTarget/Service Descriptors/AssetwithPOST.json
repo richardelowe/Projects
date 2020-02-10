@@ -1,0 +1,127 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Asset",
+    "x-lastModified": "10 February 2020 1:37:33 pm (Australian Eastern Daylight Time)"
+  },
+  "paths": {
+    "/asset": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/Asset"
+            },
+            "examples": {
+              "application/json": {
+                "asset": [
+                  {
+                    "id": "31589",
+                    "assetCode": "HTR",
+                    "assetType": "Haul Truck",
+                    "assetLocation": "Newman",
+                    "modelNumber": "CAH3222",
+                    "manufacturer": "Caterpillar",
+                    "datePurchased": "2020-02-09+11:00"
+                  },
+                  {
+                    "id": "31589",
+                    "assetCode": "HTR",
+                    "assetType": "Haul Truck",
+                    "assetLocation": "Newman",
+                    "modelNumber": "CAH3222",
+                    "manufacturer": "Caterpillar",
+                    "datePurchased": "2020-02-09"
+                  }
+                ]
+              }
+            }
+          },
+          "204": {
+            "description": "Response with no content"
+          }
+        },
+        "parameters": [],
+        "operationId": "getAsset"
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "id": "234144"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Asset"
+            }
+          }
+        ],
+        "operationId": "postAsset",
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "default": "234144"
+        }
+      }
+    },
+    "Asset": {
+      "type": "object",
+      "properties": {
+        "assetCode": {
+          "type": "string",
+          "default": "HTR"
+        },
+        "assetType": {
+          "type": "string",
+          "default": "Haul Truck"
+        },
+        "assetLocation": {
+          "type": "string",
+          "default": "Newman"
+        },
+        "modelNumber": {
+          "type": "string",
+          "default": "CAH3222"
+        },
+        "manufacturer": {
+          "type": "string",
+          "default": "Caterpillar"
+        },
+        "datePurchased": {
+          "type": "string",
+          "format": "date",
+          "default": "2020-02-10"
+        }
+      }
+    }
+  }
+}

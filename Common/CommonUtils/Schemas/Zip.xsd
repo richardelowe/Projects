@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Zip" xmlns:tns="http://www.example.org/Zip" elementFormDefault="qualified">
+
+    <element name="ZipInput" type="tns:ZipInput"></element>
+    
+    <complexType name="ZipInput">
+    	<sequence>
+    		<element name="InputFileName" type="string"></element>
+    		<element name="OutputFileName" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ZipOutput">
+    	<sequence>
+    		<element name="OutputFileName" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="ZipOutput" type="tns:ZipOutput"></element>
+</schema>

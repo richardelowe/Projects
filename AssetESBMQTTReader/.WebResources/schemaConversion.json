@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/AssetESBMQTTReader/Service Descriptors/Asset.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1581340546043Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/AssetESBMQTTReader/Service Descriptors/AssetwithPOST.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1581340689749Converted/JsonSchema"
+    }
+]}

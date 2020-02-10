@@ -1,0 +1,87 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Asset2",
+    "x-lastModified": "09 February 2020 4:55:47 pm (Australian Eastern Daylight Time)"
+  },
+  "paths": {
+    "/asset": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/asset"
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "id": "31589",
+                  "assetCode": "HTR",
+                  "assetType": "Haul Truck",
+                  "assetLocation": "Newman",
+                  "modelNumber": "CAH3222",
+                  "manufacturer": "Caterpillar",
+                  "datePurchased": "2020-02-09+11:00"
+                },
+                {
+                  "id": "31589",
+                  "assetCode": "HTR",
+                  "assetType": "Haul Truck",
+                  "assetLocation": "Newman",
+                  "modelNumber": "CAH3222",
+                  "manufacturer": "Caterpillar",
+                  "datePurchased": "2020-02-09+11:00"
+                }
+              ]
+            }
+          }
+        },
+        "parameters": [],
+        "operationId": "getAsset"
+      }
+    }
+  },
+  "definitions": {
+    "asset": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "default": "31589"
+          },
+          "assetCode": {
+            "type": "string",
+            "default": "HTR"
+          },
+          "assetType": {
+            "type": "string",
+            "default": "Haul Truck"
+          },
+          "assetLocation": {
+            "type": "string",
+            "default": "Newman"
+          },
+          "modelNumber": {
+            "type": "string",
+            "default": "CAH3222"
+          },
+          "manufacturer": {
+            "type": "string",
+            "default": "Caterpillar"
+          },
+          "datePurchased": {
+            "type": "string",
+            "default": "2020-02-09+11:00"
+          }
+        }
+      }
+    }
+  }
+}

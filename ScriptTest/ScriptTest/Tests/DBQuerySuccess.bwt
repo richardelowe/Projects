@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/ScriptTest/Tests/DBQuerySuccess.bwt">
+  <ProcessNode Id="dbquery.DBQuery" Name="dbquery.DBQuery" ModelType="BW" moduleName="ScriptTest">
+    <Assertion Id="d4ec87fd-915b-4cf1-85be-de4a2da15bb7" Name="End" hasDecoration="true" assertionType="Activity">
+      <Lang>urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0</Lang>
+      <Expression>&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;>&lt;/xsl:stylesheet></Expression>
+      <OriginalExpression></OriginalExpression>
+    </Assertion>
+    <MockActivity Id="af3b3324-b663-493f-b17e-24fdccf89ce6" Name="JDBCQuery" hasDecoration="true">
+      <MockOutputFilePath>Please select mock file</MockOutputFilePath>
+    </MockActivity>
+  </ProcessNode>
+</emulation:EmulationData>

@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/AssetsOTSource/Service Descriptors/Asset.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1581286028867Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/AssetsOTSource/Service Descriptors/Asset.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/T1581286521923Converted/JsonSchema"
+    }
+]}

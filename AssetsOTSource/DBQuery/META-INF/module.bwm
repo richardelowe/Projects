@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_ULkzYEshEeqBaswrBQ1dUA" targetNamespace="http://tns.tibco.com/bw/composite/AssetsOTSource" name="AssetsOTSource" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_qe5JMkuJEeqOKMvFk8z68w" name="asset" promote="ComponentRESTService/asset">
+    <sca:interface.wsdl xmi:id="_qe5wQEuJEeqOKMvFk8z68w" interface="http://xmlns.example.com/20200209204826PLT#wsdl.interface(asset)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_qe5wQUuJEeqOKMvFk8z68w" name="RestService" path="/asset" docBasePath="http://localhost:7777/AssetsOTSource" docResourcePath="Asset" basePath="/" connector="dbquery.RESTService" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/Asset.json">
+      <operation xmi:id="_qe6-YEuJEeqOKMvFk8z68w" operationName="get" nickname="getAsset" httpMethod="GET" responseStyle="element" outputPartName="item">
+        <responseStatus xmi:id="_qfPugEuJEeqOKMvFk8z68w" statusCode="204" reasonPhrase="Response with no content" dataType="string"/>
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_qfPugUuJEeqOKMvFk8z68w"/>
+      <advancedConfig xmi:id="_qe5wQkuJEeqOKMvFk8z68w" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_qe6-YUuJEeqOKMvFk8z68w" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_UpGc4EshEeqBaswrBQ1dUA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UpOYsEshEeqBaswrBQ1dUA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UpSDEEshEeqBaswrBQ1dUA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UpVGYEshEeqBaswrBQ1dUA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UpYwwEshEeqBaswrBQ1dUA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UpcbIEshEeqBaswrBQ1dUA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_UpfecEshEeqBaswrBQ1dUA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_-BStEEshEeqBaswrBQ1dUA" name="/DBQuery/DBUser" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__7pg8EshEeqBaswrBQ1dUA" name="/DBQuery/DBPassword" type="property:password" scaext:simpleValue="#!SpdP1KvBad8v4qihguXfSg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AA_7AEsiEeqBaswrBQ1dUA" name="/DBQuery/DBUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_UZukIEshEeqBaswrBQ1dUA" name="ComponentRESTService" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UZvyQEshEeqBaswrBQ1dUA" processName="dbquery.RESTService"/>
+    <sca:service xmi:id="_qe5JMEuJEeqOKMvFk8z68w" name="asset">
+      <sca:interface.wsdl xmi:id="_qe5JMUuJEeqOKMvFk8z68w" interface="http://xmlns.example.com/20200209204826PLT#wsdl.interface(asset)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

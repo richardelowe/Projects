@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:mqtt="http://ns.tibco.com/bw/sharedresource/mqtt" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_HRr_sEv5Eeqrr6Bde617vQ" name="MQTTConnectionResource" type="mqtt:MQTTSharedResource">
+  <jndi:reference xmi:id="_IuYAIEv5Eeqrr6Bde617vQ" key="identityServiceProvider" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="mqtt:MQTTSharedResource" xmi:id="_HRtN0Ev5Eeqrr6Bde617vQ" brokerUrl="tcp://ec2-3-24-137-245.ap-southeast-2.compute.amazonaws.com:1883" ClientID="abcqasdfadfaeww"/>
+</jndi:namedResource>

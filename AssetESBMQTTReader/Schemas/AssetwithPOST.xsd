@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1581340689749Converted/JsonSchema" xmlns:tns="/T1581340689749Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Asset" type="tns:Asset"/>
+    <xs:complexType name="Asset">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="assetCode" type="xs:string"/>
+            <xs:element minOccurs="0" name="assetType" type="xs:string"/>
+            <xs:element minOccurs="0" name="assetLocation" type="xs:string"/>
+            <xs:element minOccurs="0" name="modelNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="manufacturer" type="xs:string"/>
+            <xs:element minOccurs="0" name="datePurchased" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="GiveNewSchemaNameHere" type="tns:GiveNewSchemaNameHere"/>
+    <xs:complexType name="GiveNewSchemaNameHere">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,70 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "AssetsOTSource.application"
+  },
+  "host" : "a65d8513a4b9711eaa11e0223a11414e-734614129.ap-southeast-2.elb.amazonaws.com:80",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/asset" : {
+      "get" : {
+        "tags" : [ "Asset" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "204" : {
+            "description" : "Response with no content",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "200" : {
+            "description" : "Sample Description",
+            "schema" : {
+              "$ref" : "#/definitions/Asset"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Asset" : {
+      "type" : "object",
+      "properties" : {
+        "asset" : {
+          "type" : "array",
+          "items" : {
+            "properties" : {
+              "assetLocation" : {
+                "type" : "string"
+              },
+              "assetCode" : {
+                "type" : "string"
+              },
+              "datePurchased" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "modelNumber" : {
+                "type" : "string"
+              },
+              "id" : {
+                "type" : "string"
+              },
+              "assetType" : {
+                "type" : "string"
+              },
+              "manufacturer" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

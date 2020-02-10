@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_K-imkUvmEeqUzcOL9PUi9g" name="scripttest.RESTService" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_K-lC0EvmEeqUzcOL9PUi9g" host="a65d8513a4b9711eaa11e0223a11414e-734614129.ap-southeast-2.elb.amazonaws.com" port="80"/>
+</jndi:namedResource>

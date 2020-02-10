@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1570666355212" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1570666355212">
+  <complexType name="LogErrorElementType">
+    <sequence>
+    	<element maxOccurs="1" minOccurs="0" name="msgCode"
+    		type="string" />
+    	<element maxOccurs="1" minOccurs="0" name="message"
+    		type="string" />
+    	<element name="stackTrace" type="string" minOccurs="0" maxOccurs="1"></element>
+    </sequence>
+  </complexType>
+  <element name="LogErrorElement" type="tns:LogErrorElementType"/>
+</schema>

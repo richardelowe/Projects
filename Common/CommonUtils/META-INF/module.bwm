@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_nBY9UOruEemHVJRtSWdM3A" targetNamespace="http://tns.tibco.com/bw/composite/CommonUtils" name="CommonUtils" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_nN6WYOruEemHVJRtSWdM3A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_nN-n0OruEemHVJRtSWdM3A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_nN_18OruEemHVJRtSWdM3A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_nOAdAOruEemHVJRtSWdM3A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_nOBrIOruEemHVJRtSWdM3A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_nOC5QOruEemHVJRtSWdM3A" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_nOEHYOruEemHVJRtSWdM3A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Iah20OrwEemHVJRtSWdM3A" name="/Common/LogLevels/Error" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NhdUYOrwEemHVJRtSWdM3A" name="/Common/LogLevels/Warn" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NnkjcOrwEemHVJRtSWdM3A" name="/Common/LogLevels/Info" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NsnbgOrwEemHVJRtSWdM3A" name="/Common/LogLevels/Debug" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>
